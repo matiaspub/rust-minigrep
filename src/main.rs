@@ -13,7 +13,7 @@ fn main() {
     println!("filename {:?}", config.file);
 
     if let Err(e) = run(config) {
-        println!("App error: {}", e);
+        eprintln!("App error: {}", e);
         process::exit(1);
     }
 }
